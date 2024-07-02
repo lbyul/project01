@@ -1,0 +1,93 @@
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.modal.on {
+    display: block;
+}
+
+.modal .modal-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 800px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-txt01, .modal-txt02 {
+    color: #5B2386;
+    font-family: 'OTEnjoystoriesBA';
+    font-weight: 700;
+}
+.modal-txt01 {
+    font-size: 6rem;
+    line-height: 105.6px;
+}
+.modal-txt02 {
+    font-size: 2.25rem;
+    line-height: 39.6px;
+}
+
+.modal-container img {
+    width: 433px;
+    height: 337px;
+    margin: 29px 0 74px 0;
+}
+
+.close-btn {
+    background-color: #FCEE21;
+    border-radius: 56px;
+    padding: 21px 49px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    color: #5B2386;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.close-btn:hover {
+    background-color: #5B2386;
+    color: #FCEE21;
+}
+
+@media (max-width: 430px) {
+    .modal .modal-container {
+        width: 330px;
+        height: 500px;
+    }
+    
+    .modal-txt01 {
+        font-size: 4.572em;
+        line-height: 70.4px;
+    }
+    .modal-txt02 {
+        font-size: 2.572em;
+    }
+
+    .modal-container img {
+        margin: 24px 0 34px 0;
+        width: 241px;
+        height: 188px;
+    }
+    
+    .close-btn {
+        border-radius: 13px;
+        padding: 19px 45px 17px 45px;
+        font-size: 1em;
+        line-height: 1.4;
+        display: block;
+        width: 241px;
+    }
+}

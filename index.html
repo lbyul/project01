@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1만 시간의 법칙</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./index.js">
+</head>
+<body>
+    <div id="wrap">
+        <!-- Header Start -->
+        <header id="ruleHeader">
+            <h1>
+                <a href="#" class="content-tit">
+                    <img src="./img/tit_img.svg" alt="1만 시간의 법칙">
+                </a>
+            </h1>
+        </header>
+        <!-- Header End -->
+        <!-- Main Start -->
+        <main id="ruleMain">
+            <section class="sec01">
+                <q class="quotation">연습은 어제의 당신보다 당신을 더 낫게 만든다.</q>
+            </section>    
+            <section class="sec02">
+                <div class="sec02-container">
+                    <p class="sec02-txt">
+                        <span>1만 시간의 법칙</span>은<br>
+                        어떤 분야의 전문가가 되기 위해서는<br>
+                        최소한 1만 시간의 훈련이 필요하다는 법칙이다.
+                    </p>
+                </div>
+            </section>
+            <section class="sec03">
+                <div class="sec03-container">
+                    <p>나는<input type="text" id="expert" name="expert" placeholder="예)프로그래밍">전문가가 될 것이다.
+                    그래서 앞으로 매일 하루에<input type="text" id="time" name="time" placeholder="예)5시간">시간씩 훈련할 것이다.</p>
+                </div>
+            </section>
+            <section class="sec04">
+                <a href="#" class="sec04-txt">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</a>
+            </section>
+            <section class="sec05">
+                <div class="sec05-container">
+                    <p class="sec05-txt">당신은 <span>프로그래밍</span> 전문가가 되기 위해서<br> 대략 <span>5110</span> 일 이상 훈련하셔야 합니다! :)</p>
+                </div>
+            </section>
+            <div class="modal">
+                <div class="modal-container">
+                    <p class="modal-txt01">화이팅!!♥♥♥</p>
+                    <p class="modal-txt02">당신의 꿈을 응원합니다!</p>
+                    <img src="./img/라이캣.png" alt="응원해주는 라이캣">
+                    <button class="close-btn">종료하고 진짜 훈련하러 가기 GO!GO!</button>
+                </div>
+            </div>
+            <section class="sec06">
+                <button class="go-btn">훈련하러 가기 GO!GO!</button>
+                <button href="#" class="sharing-btn">공유하기</button>
+            </section>
+        </main>
+        <!-- Main End -->
+        <!-- Footer Start -->
+        <footer id="ruleFooter">
+            <section class="footer-conainer">    
+                <img src="./img/위니브.svg" alt="위니브 로고">
+                <p>※ 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다.<br> 수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.</p>
+            </section>
+        </footer>
+        <!-- Footer End -->
+    </div>
+
+
+    <script>
+        const modal = document.querySelector('.modal');
+        const modalOpen = document.querySelector('.go-btn');
+        const modalClose = document.querySelector('.close-btn');
+
+        modalOpen.addEventListener('click',function(){
+            modal.classList.add('on');
+        });
+        modalClose.addEventListener('click',function(){
+            modal.classList.remove('on');
+        });
+    </script>
+
+</body>
+</html>

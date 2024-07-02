@@ -1,0 +1,345 @@
+
+:root {
+    --main-color:#5B2386;
+    --sub-color:#F5DF4D;
+}
+
+#wrap {
+    width: 100%;
+    /* min-height: 100vh; */
+    background: #5B2386;
+    text-align: center;
+}
+
+/* Header */
+#ruleHeader {
+    padding-top: 90px;
+    display: flex;
+    justify-content: center;
+}
+#ruleHeader h1 {
+    background: url(../img/tit_bg_img.svg) no-repeat center;
+    width: 261px;
+    height: 265px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#ruleHeader .content-tit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ruleHeader .content-tit img {
+    width: 564px;
+    height: 112px;
+}
+
+/* Main */
+#ruleMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Section01 */
+#ruleMain .sec01 {
+    margin-top: 46px;
+}
+.sec01 .quotation {
+    font-family: 'OTEnjoystoriesBA';
+    font-size: 2.25rem;
+    line-height: 39.6px;
+    font-weight: 700;
+    color: var(--sub-color);
+}
+
+/* Section02 */
+.sec02 {
+    margin-top: 78px;
+    text-align: center;
+}
+.sec02-container {
+    position: relative;
+}
+.sec02-txt {
+    font-size: 1.13rem;
+    line-height: 1.8;
+}
+.sec02-txt span {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.sec02-container::before, .sec02-container::after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    background-size: contain;
+    width: 36px;
+    height: 31px;
+}
+.sec02-container::before {
+    left: -15%;
+    background: url(../img/“.svg) no-repeat;
+}
+.sec02-container::after {
+    right: -15%;
+    background: url(../img/”.svg) no-repeat;
+}
+
+/* Section03 */
+.sec03 {
+    margin-top: 102px;
+}
+.sec03 .sec03-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec03 .sec03-container p {
+    font-size: 1.5rem;
+    line-height: 3.5;
+    white-space: pre-line;
+    /* text-align: center; */
+}
+input[type=text] {
+    width: 228px;
+    height: 57px;
+	border: none;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0 17px;
+    font-style: #BABCBE;
+}
+input::placeholder {
+    color: #BABCBE;
+}
+
+/* Section04 */
+.sec04 {
+    margin-top: 115px;
+}
+.sec04-txt {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--main-color);
+    background-color: var(--sub-color);
+    border-radius: 56px;
+    padding: 21px 49px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hiddlen;
+    white-space: nowrap;
+    transition: all 0.1s linear;
+}
+.sec04-txt::after {
+    content: '';
+    position: absolute;
+    right: -12.5%;
+    background: url(../img/finger.svg) no-repeat;
+    width: 64px;
+    height: 72px;
+    animation: figure-ani 0.6s infinite alternate;
+}
+
+.sec04-txt:hover {
+    color: #ca4491;
+}
+
+
+/* Section05 */
+.sec05 {
+    margin-top: 147px;
+}
+.sec05 .sec05-container .sec05-txt {
+    font-size: 1.5rem;
+}
+.sec05 .sec05-container .sec05-txt span {
+    font-size: 4.5rem;
+    line-height: 1.2;
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+/* Section06 */
+.sec06 {
+    margin-top: 127px;
+    display: flex;
+}
+.sec06 .go-btn, .sharing-btn {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--main-color);
+    background-color: var(--sub-color);
+    border-radius: 56px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    padding: 21px 49px;
+}
+.sec06 .sharing-btn {
+    background-color: #fff;
+    margin-left: 18px;
+}
+.go-btn:hover, .sharing-btn:hover{
+    color: #ca4491;
+}
+
+/* Footer */
+#ruleFooter {
+    padding: 130px 0 70px 0;
+}
+.footer-conainer img {
+    width: 125px;
+    height: 25px;
+}
+.footer-conainer p {
+    margin-top: 20px;
+    font-size: 0.75rem;
+    line-height: 17.38px;
+}
+
+
+/* max-width 430px */
+@media (max-width: 430px){
+    :root {
+        font-size: 0.875em;
+    }
+    /* header */
+    #ruleHeader {
+        padding-top: 40px;
+    }
+    #ruleHeader h1 {
+        background: url(../img/Frame_12.svg) no-repeat center;
+        width: 125px;
+        height: 126px;
+    }
+    #ruleHeader .content-tit img {
+        width: 267px;
+        height: 53px;
+    }
+
+    /* Section01*/
+    #ruleMain {
+        font-size: 14px;
+    }
+    #ruleMain .sec01 {
+        margin-top: 31px;
+    }
+    .sec01 .quotation {
+        font-size: 1.72em;
+        line-height: 24.2px;
+    }
+
+    /* Section02*/
+    .sec02 {
+        margin-top: 62px;
+    }
+    .sec02-txt, .sec02-txt span {
+        font-size: 1em;
+    }
+    .sec02-container::before,
+    .sec02-container::after {
+        top: 50%;
+        background-size: 22px;
+    }
+    .sec02-container::before {
+        left: -3.5%;
+    }
+    .sec02-container::after {
+        right: -9%;
+    }
+
+    /* Section03 */
+    .sec03 {
+        margin-top: 62px;
+    }
+    .sec03 .sec03-container p {
+        font-size: 1em;
+        line-height: 3.2;
+        margin-bottom: 10px;
+        display: block;
+        width: 311px;
+    }
+    input[type=text] {
+        width: 156px;
+        height: 37px;
+        font-size: 1em;
+        margin: 0 4px;
+    }
+
+    /* Section04 */
+    .sec04 {
+        margin-top: 49px;
+    }
+    .sec04-txt {
+        font-size: 1em;
+        line-height: 1.3;
+        padding: 19px 36.5px 17px 36.5px;
+        border-radius: 13px;
+        width: 241px;
+        display: block;
+        white-space: normal;
+    }
+    .sec04-txt::after {
+        right: -20%;
+        width: 43px;
+        height: 48px;
+        background-size: cover;
+    }
+
+    /* Section05 */
+    .sec05 {
+        margin-top: 64px;
+    }
+    .sec05 .sec05-container .sec05-txt {
+        font-size: 1em;
+    }
+    .sec05 .sec05-container .sec05-txt span {
+        font-size: 1.72em;
+        line-height: 1.6;
+    }
+
+    /* Section06 */
+    .sec06 {
+        margin-top: 55px;
+    }
+    .sec06 .go-btn, .sharing-btn {
+        font-size: 1em;
+        line-height: 14px;
+        padding: 13.5px 17.5px 12.5px;
+    }
+    .sec06 .go-btn {
+        display: block;
+    }
+    .sec06 .sharing-btn {
+        margin-left: 13px;
+    }
+
+    /* Footer */
+    #ruleFooter {
+        padding: 83px 0 32px 0;
+    }
+    .footer-conainer img {
+        width: 91px;
+        height: 18px;
+    }
+    .footer-conainer p {
+        margin-top: 17px;
+        font-size: 0.563em;
+        line-height: 13.03px;
+        opacity: 0.7;
+    }
+}
+
+@keyframes figure-ani {
+    0% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
