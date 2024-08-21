@@ -1,9 +1,5 @@
-@font-face {
-    font-family: 'GmarketSansMedium';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
+
 @font-face {
     font-family: 'OTEnjoystoriesBA';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
@@ -12,7 +8,7 @@
 }
 
 html {
-    font-family: 'GmarketSansMedium';
+    font-family: 'GmarketSans';
 }
 
 /* 마진 패딩 초기화 */
@@ -24,7 +20,7 @@ body, div, h1, h2, h3, h4, h5, h6 , p, a, dl, dt, dd, ol, ul, li, form, fieldset
 
 /* 타이포 설정 */
 body,h1,h2,h3,h4,h5,h6,input,p,select,textarea,button,a,span {
-    font-family: 'GmarketSansMedium';
+    font-family: 'GmarketSans';
     font-size: 16px;
     color: #fff;
     line-height: 1;
